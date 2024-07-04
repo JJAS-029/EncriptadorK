@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--aqui se pone el icono de la pagina -->
+<link rel="icon" href="./img/logo_koala.png" type="image/x-icon">
+<!--todo el contenido de la pagina va dentro de body-->
+<body>
+<!--todo el contenido del encabezado es head-->        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Aqui va el nombre de la pagina-->
+    <title>koala Encriptador🐨</title>
+    <!--aqui va la referencia a la hoja de estilos-->
+    <link rel="stylesheet" href="style.css">
+    <!--(1)prueba de colores dinamicos de google estas 3 lineas las copie de material desing-->
+    <!--https://www.beercss.com/-->
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.6.5/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.6.5/dist/cdn/beer.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+
+    
+    <!--referencia para llamar a las funciones javascript-->
+    <script src="app.js"></script>
+</head>
+
+<!--Aqui comienza la separacion del 
+contenido en la pagina
+cada seccion tendra una clase distinta-->
+<section>
+    <div class="home">    
+    <div class="navbar">
+     <!--logo-->
+     <img src="./img/logo_koala.png" alt="logo" width="150" height="150"  />
+    </div>
+    <br> 
+    <div class="content">
+     <div class="padding primary-container">
+     <h5 class="bold">Texto a encriptar/desencriptar:</h5>
+     <!--la clase field textarea border es de los estilos de copiados -->
+     <div class="field textarea label border">
+     <!-- aqui va la etiqueta del cuadro de texto, for sirve 
+     para asociar la etiqueta a determiando elemento-->
+        <!--este es para el cuadro donde ira el texto a desencriptar-->
+        <textarea id="texto"></textarea><label for="texto">🕵️
+        </label>
+        </div>
+        </div>     
+        <br>
+        <div class="padding tertiary-container"> 
+        <!--boton de encriptar con su etiqueta-->
+        <!--Etiqueta de resultado-->
+        <h5 class="bold">Resultado:</h5>
+        <!--Parrafo de resultado-->
+
+         <div class="field textarea label border">
+            <textarea id="resultado"></textarea>
+            <label>Aqui se mostrará tu codigo 🔎</label>
+            
+         </div>          
+        </div>
+    </div>
+
+<br>
+    <!--seccion de los botones-->
+    <div class="botones"> 
+    <button class="primary" onclick="encriptar()">Encriptar</button>
+    <!--boton de desencriptar-->
+    <button class="secondary" onclick="desencriptar()">Desencriptar</button>  
+    <!--boton de copiar-->
+    <button Class="tertiary"  onclick="copiar()">Copiar</button>  
+    </div>
+<!--Pie de pagina con datos de contacto-->   
+<article class="small scroll">
+    <p class="bold">Programa desarollado por: </p>
+    <p>Josue J. Aguilar S. </p>
+    <p>josue.aguilar.jjas@gmail.com</p>
+    <p> codigo documentado</p>
+    <footer class="fixed">  
+    </footer>
+  </article>
+
+
+</section>
+    
+</body>
+</html>

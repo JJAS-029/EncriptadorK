@@ -1,0 +1,52 @@
+/*funcion para cambiar de color */
+
+
+/*estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    animation: cambiarColor 5s infinite;
+    margin: 20px;
+    display: center;
+    float: flex;
+    align-items: CENTER;
+    
+}
+/*estilo de donde va el logo y la cabecer*/
+.navbar{
+    width: 100%;
+    display: center;
+    height: 100px;
+    align-items: CENTER;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-sizing: border-box;
+    float:center;
+
+}
+/*estilo del contenido donde van las cajas de texto*/
+.content {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+/*Estilo de la pagina en general*/
+.home {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
